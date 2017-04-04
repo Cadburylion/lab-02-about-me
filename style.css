@@ -1,4 +1,6 @@
-/** {
+/* Commented out this code, which was written in class, to keep it for reference
+
+* {
   font-weight: normal;
   list-style: none;
   padding: 0px;
@@ -9,4 +11,20 @@
 
 body {
   background-color: orange
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.justify {
+  text-align: justify;
 }
