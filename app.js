@@ -25,17 +25,37 @@ if (LionsVsGorillas.trim().toLowerCase() == 'yes' || LionsVsGorillas.trim().toLo
 } else if (LionsVsGorillas.trim().toLowerCase() == 'no' || LionsVsGorillas.trim().toLowerCase() == 'n'){
   alert('Uh. Have you ever seen a lion? Also gorillas are lame.');
 } else {
-  alert('I don\'t know what you\'re saying right now, but it\'s probably wrong.');
+  alert('You talkin\' that trash?');
 };
 
 LionsParkour = prompt('Do you think lions like parkour?');
 
 if (LionsParkour.trim().toLowerCase() == 'yes' || LionsParkour.trim().toLowerCase() == 'y'){
-  alert('Obviously! Lions are superior to gorillas in every way');
+  alert('Duh! Lions invented parkour and use hyena\'s for hand rails.');
 } else if (LionsParkour.trim().toLowerCase() == 'no' || LionsParkour.trim().toLowerCase() == 'n'){
-  alert('Uh. Have you ever seen a lion? Also gorillas are lame.');
+  alert('You might think this, given that lions sleep for up to 20 hours a day, but you\'d be wrong.');
 } else {
-  alert('I don\'t know what you\'re saying right now, but it\'s probably wrong.');
+  alert('You talkin\' that trash?');
+};
+
+CoolParkour = prompt('Do you think parkour is cool?');
+
+if (CoolParkour.trim().toLowerCase() == 'yes' || CoolParkour.trim().toLowerCase() == 'y'){
+  alert('Of course it is! I want to have to parkour to get to my bathroom.');
+} else if (CoolParkour.trim().toLowerCase() == 'no' || CoolParkour.trim().toLowerCase() == 'n'){
+  alert('As Doctor Cox would say: Wrong wrong wrong wrong, wrong wrong wrong wrong. You\'re wrong. You\'re wrong. You\'re wrong.');
+} else {
+  alert('You talkin\' that trash?');
+};
+
+MyLastName = prompt('Is my last name similar to parkour?');
+
+if (MyLastName.trim().toLowerCase() == 'yes' || MyLastName.trim().toLowerCase() == 'y'){
+  alert('A-ha! It is! It\'s Parker, so obviously I should be good at it, like lions. But I\'m not.');
+} else if (MyLastName.trim().toLowerCase() == 'no' || MyLastName.trim().toLowerCase() == 'n'){
+  alert('Le wrong-o. It\'s Parker. Are you sure you know me?');
+} else {
+  alert('You talkin\' that trash?');
 };
 
 /*LionsVsGorillas = prompt('Do you think lions can defeat gorillas?');
