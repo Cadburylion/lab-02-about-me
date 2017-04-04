@@ -8,7 +8,8 @@ var LionsParkour;
 var CoolParkour;
 var MyLastName;
 
-FavAnimal = prompt('Do you think turtles are my favorite animal?');
+FavAnimal = prompt('Do you think lions are my favorite animal?');
+console.log('My answer to "Do you think lions are my favorite animal?" is', FavAnimal);
 
 if (FavAnimal.trim().toLowerCase() == 'yes' || FavAnimal.trim().toLowerCase() == 'y'){
   alert('You\'re right! Lions are totally boss.');
@@ -19,6 +20,7 @@ if (FavAnimal.trim().toLowerCase() == 'yes' || FavAnimal.trim().toLowerCase() ==
 };
 
 LionsVsGorillas = prompt('Do you think lions can defeat gorillas?');
+console.log('My answer to "Do you think lions can defeat gorillas?" is', LionsVsGorillas);
 
 if (LionsVsGorillas.trim().toLowerCase() == 'yes' || LionsVsGorillas.trim().toLowerCase() == 'y'){
   alert('Obviously! Lions are superior to gorillas in every way');
@@ -29,6 +31,7 @@ if (LionsVsGorillas.trim().toLowerCase() == 'yes' || LionsVsGorillas.trim().toLo
 };
 
 LionsParkour = prompt('Do you think lions like parkour?');
+console.log('My answer to "Do you think lions like parkour?" is', LionsParkour);
 
 if (LionsParkour.trim().toLowerCase() == 'yes' || LionsParkour.trim().toLowerCase() == 'y'){
   alert('Duh! Lions invented parkour and use hyena\'s for hand rails.');
@@ -39,6 +42,7 @@ if (LionsParkour.trim().toLowerCase() == 'yes' || LionsParkour.trim().toLowerCas
 };
 
 CoolParkour = prompt('Do you think parkour is cool?');
+console.log('My answer to "Do you think parkour is cool?" is', CoolParkour)
 
 if (CoolParkour.trim().toLowerCase() == 'yes' || CoolParkour.trim().toLowerCase() == 'y'){
   alert('Of course it is! I want to have to parkour to get to my bathroom.');
@@ -49,6 +53,7 @@ if (CoolParkour.trim().toLowerCase() == 'yes' || CoolParkour.trim().toLowerCase(
 };
 
 MyLastName = prompt('Is my last name similar to parkour?');
+console.log('My answer to "Is my last name similar to parkour?" is', MyLastName)
 
 if (MyLastName.trim().toLowerCase() == 'yes' || MyLastName.trim().toLowerCase() == 'y'){
   alert('A-ha! It is! It\'s Parker, so obviously I should be good at it, like lions. But I\'m not.');
