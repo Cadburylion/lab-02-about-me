@@ -85,26 +85,19 @@ window.onload = function() {
     }
   }
 
-  question1();
-  question2();
-  question3();
-  question4();
-  question5();
-
   // The following code adds a for loop that prompts the user to guess my favorite number and gives them 4 attempts
-
   var favoriteNumber = Math.floor((Math.random() * 10) + 1);
   var favoriteNumber = Math.floor(Math.random() * 10) + 1;
   var keepGuessing = true;
   var guess;
   //
-
   function question6(attempts) {
     guess = prompt('What\'s my favorite number?'); // get user input
     guess = parseInt(guess); // converts user input from string to number
     if (guess === favoriteNumber) {
       alert('You\'re right! ' + favoriteNumber + ' is my favorite number.');
       numberRight++;
+      console.log('Q7: ' + numberRight);
       console.log('User is right!');
       keepGuessing = false;
     } else if (guess > favoriteNumber) {
@@ -123,40 +116,48 @@ window.onload = function() {
     }
   }
 
+  var statesVisited = ['oregon', 'idaho', 'arizona'];
+  var userInput;
+  var userCorrect = false;
+
+  function question7(userAttempts) {
+    if(userAttempts === 0) {
+      userInput = prompt('Now guess a state I\'ve visited! You have six tries. Good luck!');
+      console.log('User is prompted to guess a state I\'ve visited')
+    } else {
+      userInput = prompt('Keep Guessing!');
+      console.log('User is prompted to keep guessing which state I\'ve visited')
+    }
+
+    for(var i = 0; i < statesVisited.length; i++) {
+
+      if(statesVisited[i] === userInput) {
+        alert('You\'re right! I did live in ' + statesVisited[i] + '. I\'ve visited oregon, idaho, and arizona.');
+        console.log('User is alerted they guessed a correct state');
+        numberRight++;
+        console.log('Q7: ' + numberRight);
+     //  if(statesVisited[i] === userInput) {
+     //    alert('You\'re right! I did live in ' + statesVisited[i] + ' I\'ve visited ' + statesVisited[0] + ', ' statesVisited[1] + ', and ' + statesVisited[2]);
+       userCorrect = true;
+      }
+     }
+  }
+
+
+  question1();
+  question2();
+  question3();
+  question4();
+  question5();
 
   for(var attempts = 4; attempts > 0 && keepGuessing; attempts--){
     question6(attempts);
   }
 
-  //
 
-  var statesVisited = ['oregon', 'idaho', 'arizona'];
-  var userInput;
-  var userCorrect = false;
-
-    for(var userAttempts = 0; userAttempts < 6 && userCorrect === false ; userAttempts++) {
-
-     if(userAttempts === 0) {
-       userInput = prompt('Now guess a state I\'ve visited! You have six tries. Good luck!');
-       console.log('User is prompted to guess a state I\'ve visited')
-     } else {
-       userInput = prompt('Keep Guessing!');
-       console.log('User is prompted to keep guessing which state I\'ve visited')
-     }
-
-     for(var i = 0; i < statesVisited.length; i++) {
-
-       if(statesVisited[i] === userInput) {
-         alert('You\'re right! I did live in ' + statesVisited[i] + '. I\'ve visited oregon, idaho, and arizona.');
-         console.log('User is alerted they guessed a correct state');
-         numberRight++;
-         console.log('Q7: ' + numberRight);
-      //  if(statesVisited[i] === userInput) {
-      //    alert('You\'re right! I did live in ' + statesVisited[i] + ' I\'ve visited ' + statesVisited[0] + ', ' statesVisited[1] + ', and ' + statesVisited[2]);
-        userCorrect = true;
-       }
-      }
-    }
+  for(var userAttempts = 0; userAttempts < 6 && userCorrect === false ; userAttempts++) {
+    question7(userAttempts);
+  }
 
 
 
