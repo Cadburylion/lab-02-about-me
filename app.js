@@ -40,17 +40,20 @@ window.onload = function() {
   }
   question2();
 
-  LionsParkour = prompt('Do you think lions like parkour?');
-  console.log('My answer to "Do you think lions like parkour?" is', LionsParkour);
+  function question3() {
+    LionsParkour = prompt('Do you think lions like parkour?');
+    console.log('My answer to "Do you think lions like parkour?" is', LionsParkour);
 
-  if (LionsParkour.trim().toLowerCase() == 'yes' || LionsParkour.trim().toLowerCase() == 'y'){
-    alert('Duh! Lions invented parkour and use hyena\'s for hand rails.');
-    numberRight++;
-  } else if (LionsParkour.trim().toLowerCase() == 'no' || LionsParkour.trim().toLowerCase() == 'n'){
-    alert('You might think this, given that lions sleep for up to 20 hours a day, but you\'d be wrong.');
-  } else {
-    alert('You talkin\' that trash?');
-  };
+    if (LionsParkour.trim().toLowerCase() == 'yes' || LionsParkour.trim().toLowerCase() == 'y'){
+      alert('Duh! Lions invented parkour and use hyena\'s for hand rails.');
+      numberRight++;
+    } else if (LionsParkour.trim().toLowerCase() == 'no' || LionsParkour.trim().toLowerCase() == 'n'){
+      alert('You might think this, given that lions sleep for up to 20 hours a day, but you\'d be wrong.');
+    } else {
+      alert('You talkin\' that trash?');
+    }
+  }
+  question3();
 
   CoolParkour = prompt('Do you think parkour is cool?');
   console.log('My answer to "Do you think parkour is cool?" is', CoolParkour)
