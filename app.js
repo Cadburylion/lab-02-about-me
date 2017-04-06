@@ -96,22 +96,7 @@ for(var attempts = 4; attempts > 0 && keepGuessing; attempts--){
   }
 }
 
-// var statesBeenTo = ['washington', 'idaho', 'oregon'];
-// var keepTrying;
-
-
-// for(var attempts = 6; attempts > 0 && keepTrying; attempts--){
-//   console.log('Attempts', attempts);
-//   guess = prompt('Guess a state I\'ve lived in!').toLowerCase();
-//   for(var i = 0; i < statesBeenTo.length; i++) {
-//     if (guess === statesBeenTo[i]){
-//       console.log('Your answer was right, it was ', guess);
-//     }
-//   }
-//   if (guess == statesBeenTo[i]){
-//     alert('Correct! I\'ve been to ' + statesBeenTo[i]);
-//   }
-// }
+// The following code prompts the user to guess a state I have visited and gives 6 attempts
 
 var statesVisited = ['oregon', 'idaho', 'arizona'];
 var userInput;
@@ -140,25 +125,4 @@ var userCorrect = false;
    alert('Well, at least you tried');
  }
 
-// alert('Great Job '+ whatsYourName + ''!'' + ' ' + 'You got' + ' ' + numCorrect + ' correct answers out of 7');
-
 alert('You got ' + numberRight + ' out of 7!');
-
-// var correctNumber = '7';
-// var notDone = true;
-// var guess;
-//
-// for (var guesses = 3; guesses > 0 && notDone; guesses--){
-//   guess = prompt('what\'s my favorite number?'); // get user input
-//   guess = parseInt(guess); // convert use input to number
-//   if (guess === correctNumber) {
-//     alert('you got the right number');
-//     notDone = false;
-//   } else if (guesses === 1) {
-//     alert('you are out of guesses');
-//   } else {
-//     alert('guess again');
-//   }
-// }
-
-// UNUSED CODE BELOW
