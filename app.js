@@ -83,20 +83,25 @@ for(var attempts = 4; attempts > 0 && keepGuessing; attempts--){
   if (guess === favoriteNumber) {
     alert('You\'re right! ' + favoriteNumber + ' is my favorite number.');
     numberRight++;
+    console.log('User is right!');
     keepGuessing = false;
   } else if (guess > favoriteNumber) {
     alert('Too high!');
+    console.log('User guessed favorite number too high.');
   } else if (guess < favoriteNumber) {
     alert('Too low!');
+    console.log('User guessed favorite number too low.');
   } else if (attempts === 1) {
     alert('Sorry, you\'re out of attempts!');
+    console.log('User ran out of attempts to guess my random favorite number')
     keepGuessing = false;
   } else {
     alert('Guess again!');
+    console.log('Use is alerted to guess my random favorite number again')
   }
 }
 
-// The following code prompts the user to guess a state I have visited and gives 6 attempts
+//
 
 var statesVisited = ['oregon', 'idaho', 'arizona'];
 var userInput;
@@ -106,23 +111,29 @@ var userCorrect = false;
 
    if(userAttempts === 0) {
      userInput = prompt('Now guess a state I\'ve visited! You have six tries. Good luck!');
+     console.log('User is prompted to guess a state I\'ve visited')
    } else {
-     userInput = prompt('Keep Guessing!')
+     userInput = prompt('Keep Guessing!');
+     console.log('User is prompmted to keep guessing which state I\'ve visited')
    }
 
    for(var i = 0; i < statesVisited.length; i++) {
 
      if(statesVisited[i] === userInput) {
        alert('You\'re right! I did live in ' + statesVisited[i] + ' I\'ve visited oregon, idaho, and arizona');
+       console.log('User is alerted they guessed a correct state');
+    //  if(statesVisited[i] === userInput) {
+    //    alert('You\'re right! I did live in ' + statesVisited[i] + ' I\'ve visited ' + statesVisited[0] + ', ' statesVisited[1] + ', and ' + statesVisited[2]);
+     }
        numberRight++;
        userCorrect = true;
      }
    }
 
- }
+
 
  if(userCorrect === false) {
    alert('Well, at least you tried');
  }
 
-alert('You got ' + numberRight + ' out of 7!');
+alert('You got ' + numberRight + ' out of 8!');
