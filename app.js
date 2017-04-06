@@ -23,7 +23,6 @@ window.onload = function() {
       alert('You talkin\' that trash?');
     }
   }
-  question1();
 
   function question2() {
     LionsVsGorillas = prompt('Do you think lions can defeat gorillas?');
@@ -38,7 +37,6 @@ window.onload = function() {
       alert('You talkin\' that trash?');
     }
   }
-  question2();
 
   function question3() {
     LionsParkour = prompt('Do you think lions like parkour?');
@@ -53,31 +51,40 @@ window.onload = function() {
       alert('You talkin\' that trash?');
     }
   }
+
+  function question4() {
+    CoolParkour = prompt('Do you think parkour is cool?');
+    console.log('My answer to "Do you think parkour is cool?" is', CoolParkour)
+
+    if (CoolParkour.trim().toLowerCase() == 'yes' || CoolParkour.trim().toLowerCase() == 'y'){
+      alert('Of course it is! I want to have to parkour to get to my bathroom.');
+      numberRight++;
+    } else if (CoolParkour.trim().toLowerCase() == 'no' || CoolParkour.trim().toLowerCase() == 'n'){
+      alert('As Doctor Cox would say: Wrong wrong wrong wrong, wrong wrong wrong wrong. You\'re wrong. You\'re wrong. You\'re wrong.');
+    } else {
+      alert('You talkin\' that trash?');
+    }
+  }
+
+  function question5() {
+    MyLastName = prompt('Is my last name similar to parkour?');
+    console.log('My answer to "Is my last name similar to parkour?" is', MyLastName)
+
+    if (MyLastName.trim().toLowerCase() == 'yes' || MyLastName.trim().toLowerCase() == 'y'){
+      alert('A-ha! It is! It\'s Parker, so obviously I should be good at it, like lions. But I\'m not.');
+      numberRight++;
+    } else if (MyLastName.trim().toLowerCase() == 'no' || MyLastName.trim().toLowerCase() == 'n'){
+      alert('Le wrong-o. It\'s Parker. Are you sure you know me?');
+    } else {
+      alert('You talkin\' that trash?');
+    }
+  }
+
+  question1();
+  question2();
   question3();
-
-  CoolParkour = prompt('Do you think parkour is cool?');
-  console.log('My answer to "Do you think parkour is cool?" is', CoolParkour)
-
-  if (CoolParkour.trim().toLowerCase() == 'yes' || CoolParkour.trim().toLowerCase() == 'y'){
-    alert('Of course it is! I want to have to parkour to get to my bathroom.');
-    numberRight++;
-  } else if (CoolParkour.trim().toLowerCase() == 'no' || CoolParkour.trim().toLowerCase() == 'n'){
-    alert('As Doctor Cox would say: Wrong wrong wrong wrong, wrong wrong wrong wrong. You\'re wrong. You\'re wrong. You\'re wrong.');
-  } else {
-    alert('You talkin\' that trash?');
-  };
-
-  MyLastName = prompt('Is my last name similar to parkour?');
-  console.log('My answer to "Is my last name similar to parkour?" is', MyLastName)
-
-  if (MyLastName.trim().toLowerCase() == 'yes' || MyLastName.trim().toLowerCase() == 'y'){
-    alert('A-ha! It is! It\'s Parker, so obviously I should be good at it, like lions. But I\'m not.');
-    numberRight++;
-  } else if (MyLastName.trim().toLowerCase() == 'no' || MyLastName.trim().toLowerCase() == 'n'){
-    alert('Le wrong-o. It\'s Parker. Are you sure you know me?');
-  } else {
-    alert('You talkin\' that trash?');
-  };
+  question4();
+  question5();
 
   // The following code adds a for loop that prompts the user to guess my favorite number and gives them 4 attempts
 
