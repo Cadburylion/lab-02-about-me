@@ -17,6 +17,7 @@ window.onload = function() {
     if (FavAnimal.trim().toLowerCase() == 'yes' || FavAnimal.trim().toLowerCase() == 'y'){
       alert('You\'re right! Lions are totally boss.');
       numberRight++;
+      console.log('Q1: ' + numberRight);
     } else if (FavAnimal.trim().toLowerCase() == 'no' || FavAnimal.trim().toLowerCase() == 'n'){
       alert('What? How could lions not be my favorite animal?');
     } else {
@@ -31,6 +32,7 @@ window.onload = function() {
     if (LionsVsGorillas.trim().toLowerCase() == 'yes' || LionsVsGorillas.trim().toLowerCase() == 'y'){
       alert('Obviously! Lions are superior to gorillas in every way');
       numberRight++;
+      console.log('Q2: ' + numberRight);
     } else if (LionsVsGorillas.trim().toLowerCase() == 'no' || LionsVsGorillas.trim().toLowerCase() == 'n'){
       alert('Uh. Have you ever seen a lion? Also gorillas are lame.');
     } else {
@@ -45,6 +47,7 @@ window.onload = function() {
     if (LionsParkour.trim().toLowerCase() == 'yes' || LionsParkour.trim().toLowerCase() == 'y'){
       alert('Duh! Lions invented parkour and use hyena\'s for hand rails.');
       numberRight++;
+      console.log('Q3: ' + numberRight);
     } else if (LionsParkour.trim().toLowerCase() == 'no' || LionsParkour.trim().toLowerCase() == 'n'){
       alert('You might think this, given that lions sleep for up to 20 hours a day, but you\'d be wrong.');
     } else {
@@ -59,6 +62,7 @@ window.onload = function() {
     if (CoolParkour.trim().toLowerCase() == 'yes' || CoolParkour.trim().toLowerCase() == 'y'){
       alert('Of course it is! I want to have to parkour to get to my bathroom.');
       numberRight++;
+      console.log('Q4: ' + numberRight);
     } else if (CoolParkour.trim().toLowerCase() == 'no' || CoolParkour.trim().toLowerCase() == 'n'){
       alert('As Doctor Cox would say: Wrong wrong wrong wrong, wrong wrong wrong wrong. You\'re wrong. You\'re wrong. You\'re wrong.');
     } else {
@@ -73,6 +77,7 @@ window.onload = function() {
     if (MyLastName.trim().toLowerCase() == 'yes' || MyLastName.trim().toLowerCase() == 'y'){
       alert('A-ha! It is! It\'s Parker, so obviously I should be good at it, like lions. But I\'m not.');
       numberRight++;
+      console.log('Q5: ' + numberRight);
     } else if (MyLastName.trim().toLowerCase() == 'no' || MyLastName.trim().toLowerCase() == 'n'){
       alert('Le wrong-o. It\'s Parker. Are you sure you know me?');
     } else {
@@ -93,7 +98,8 @@ window.onload = function() {
   var keepGuessing = true;
   var guess;
   //
-  for(var attempts = 4; attempts > 0 && keepGuessing; attempts--){
+
+  function question6(attempts) {
     guess = prompt('What\'s my favorite number?'); // get user input
     guess = parseInt(guess); // converts user input from string to number
     if (guess === favoriteNumber) {
@@ -117,20 +123,25 @@ window.onload = function() {
     }
   }
 
+
+  for(var attempts = 4; attempts > 0 && keepGuessing; attempts--){
+    question6(attempts);
+  }
+
   //
 
   var statesVisited = ['oregon', 'idaho', 'arizona'];
   var userInput;
   var userCorrect = false;
 
-   for(var userAttempts = 0; userAttempts < 6 && userCorrect === false ; userAttempts++) {
+    for(var userAttempts = 0; userAttempts < 6 && userCorrect === false ; userAttempts++) {
 
      if(userAttempts === 0) {
        userInput = prompt('Now guess a state I\'ve visited! You have six tries. Good luck!');
        console.log('User is prompted to guess a state I\'ve visited')
      } else {
        userInput = prompt('Keep Guessing!');
-       console.log('User is prompmted to keep guessing which state I\'ve visited')
+       console.log('User is prompted to keep guessing which state I\'ve visited')
      }
 
      for(var i = 0; i < statesVisited.length; i++) {
@@ -138,13 +149,14 @@ window.onload = function() {
        if(statesVisited[i] === userInput) {
          alert('You\'re right! I did live in ' + statesVisited[i] + '. I\'ve visited oregon, idaho, and arizona.');
          console.log('User is alerted they guessed a correct state');
+         numberRight++;
+         console.log('Q7: ' + numberRight);
       //  if(statesVisited[i] === userInput) {
       //    alert('You\'re right! I did live in ' + statesVisited[i] + ' I\'ve visited ' + statesVisited[0] + ', ' statesVisited[1] + ', and ' + statesVisited[2]);
+        userCorrect = true;
        }
-         numberRight++;
-         userCorrect = true;
-       }
-     }
+      }
+    }
 
 
 
@@ -152,5 +164,5 @@ window.onload = function() {
      alert('Well, at least you tried');
    }
 
-  alert('You got ' + numberRight + ' out of 8!');
+  alert('You got ' + numberRight + ' out of 7!');
 }
