@@ -10,17 +10,20 @@ var LionsParkour;
 var CoolParkour;
 var MyLastName;
 
-FavAnimal = prompt('Do you think lions are my favorite animal?');
-console.log('My answer to "Do you think lions are my favorite animal?" is', FavAnimal);
+function question1() {
+  FavAnimal = prompt('Do you think lions are my favorite animal?');
+  console.log('My answer to "Do you think lions are my favorite animal?" is', FavAnimal);
 
-if (FavAnimal.trim().toLowerCase() == 'yes' || FavAnimal.trim().toLowerCase() == 'y'){
-  alert('You\'re right! Lions are totally boss.');
-  numberRight++;
-} else if (FavAnimal.trim().toLowerCase() == 'no' || FavAnimal.trim().toLowerCase() == 'n'){
-  alert('What? How could lions not be my favorite animal?');
-} else {
-  alert('You talkin\' that trash?');
-};
+  if (FavAnimal.trim().toLowerCase() == 'yes' || FavAnimal.trim().toLowerCase() == 'y'){
+    alert('You\'re right! Lions are totally boss.');
+    numberRight++;
+  } else if (FavAnimal.trim().toLowerCase() == 'no' || FavAnimal.trim().toLowerCase() == 'n'){
+    alert('What? How could lions not be my favorite animal?');
+  } else {
+    alert('You talkin\' that trash?');
+  }
+}
+question1();
 
 LionsVsGorillas = prompt('Do you think lions can defeat gorillas?');
 console.log('My answer to "Do you think lions can defeat gorillas?" is', LionsVsGorillas);
