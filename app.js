@@ -1,5 +1,5 @@
 'use strict';
-
+window.onload = function() {
 console.log('this class rules!');
 
 var numberRight = 0;
@@ -120,7 +120,7 @@ var userCorrect = false;
    for(var i = 0; i < statesVisited.length; i++) {
 
      if(statesVisited[i] === userInput) {
-       alert('You\'re right! I did live in ' + statesVisited[i] + ' I\'ve visited oregon, idaho, and arizona');
+       alert('You\'re right! I did live in ' + statesVisited[i] + '. I\'ve visited oregon, idaho, and arizona.');
        console.log('User is alerted they guessed a correct state');
     //  if(statesVisited[i] === userInput) {
     //    alert('You\'re right! I did live in ' + statesVisited[i] + ' I\'ve visited ' + statesVisited[0] + ', ' statesVisited[1] + ', and ' + statesVisited[2]);
@@ -137,3 +137,4 @@ var userCorrect = false;
  }
 
 alert('You got ' + numberRight + ' out of 8!');
+}
