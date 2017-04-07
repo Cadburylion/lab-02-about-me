@@ -4,21 +4,21 @@ window.onload = function() {
 
   var numberRight = 0;
 
-  var FavAnimal;
-  var LionsVsGorillas;
-  var LionsParkour;
-  var CoolParkour;
-  var MyLastName;
+  var favAnimal;
+  var lionsVsGorillas;
+  var lionsParkour;
+  var coolParkour;
+  var myLastName;
 
   function question1() {
-    FavAnimal = prompt('Do you think lions are my favorite animal?');
-    console.log('My answer to "Do you think lions are my favorite animal?" is', FavAnimal);
+    favAnimal = prompt('Do you think lions are my favorite animal?');
+    console.log('My answer to "Do you think lions are my favorite animal?" is', favAnimal);
 
-    if (FavAnimal.trim().toLowerCase() == 'yes' || FavAnimal.trim().toLowerCase() == 'y'){
+    if (favAnimal.trim().toLowerCase() == 'yes' || favAnimal.trim().toLowerCase() == 'y'){
       alert('You\'re right! Lions are totally boss.');
       numberRight++;
       console.log('Q1: ' + numberRight);
-    } else if (FavAnimal.trim().toLowerCase() == 'no' || FavAnimal.trim().toLowerCase() == 'n'){
+    } else if (favAnimal.trim().toLowerCase() == 'no' || favAnimal.trim().toLowerCase() == 'n'){
       alert('What? How could lions not be my favorite animal?');
     } else {
       alert('You talkin\' that trash?');
@@ -26,14 +26,14 @@ window.onload = function() {
   }
 
   function question2() {
-    LionsVsGorillas = prompt('Do you think lions can defeat gorillas?');
-    console.log('My answer to "Do you think lions can defeat gorillas?" is', LionsVsGorillas);
+    lionsVsGorillas = prompt('Do you think lions can defeat gorillas?');
+    console.log('My answer to "Do you think lions can defeat gorillas?" is', lionsVsGorillas);
 
-    if (LionsVsGorillas.trim().toLowerCase() == 'yes' || LionsVsGorillas.trim().toLowerCase() == 'y'){
+    if (lionsVsGorillas.trim().toLowerCase() == 'yes' || lionsVsGorillas.trim().toLowerCase() == 'y'){
       alert('Obviously! Lions are superior to gorillas in every way');
       numberRight++;
       console.log('Q2: ' + numberRight);
-    } else if (LionsVsGorillas.trim().toLowerCase() == 'no' || LionsVsGorillas.trim().toLowerCase() == 'n'){
+    } else if (lionsVsGorillas.trim().toLowerCase() == 'no' || lionsVsGorillas.trim().toLowerCase() == 'n'){
       alert('Uh. Have you ever seen a lion? Also gorillas are lame.');
     } else {
       alert('You talkin\' that trash?');
@@ -41,14 +41,14 @@ window.onload = function() {
   }
 
   function question3() {
-    LionsParkour = prompt('Do you think lions like parkour?');
-    console.log('My answer to "Do you think lions like parkour?" is', LionsParkour);
+    lionsParkour = prompt('Do you think lions like parkour?');
+    console.log('My answer to "Do you think lions like parkour?" is', lionsParkour);
 
-    if (LionsParkour.trim().toLowerCase() == 'yes' || LionsParkour.trim().toLowerCase() == 'y'){
+    if (lionsParkour.trim().toLowerCase() == 'yes' || lionsParkour.trim().toLowerCase() == 'y'){
       alert('Duh! Lions invented parkour and use hyena\'s for hand rails.');
       numberRight++;
       console.log('Q3: ' + numberRight);
-    } else if (LionsParkour.trim().toLowerCase() == 'no' || LionsParkour.trim().toLowerCase() == 'n'){
+    } else if (lionsParkour.trim().toLowerCase() == 'no' || lionsParkour.trim().toLowerCase() == 'n'){
       alert('You might think this, given that lions sleep for up to 20 hours a day, but you\'d be wrong.');
     } else {
       alert('You talkin\' that trash?');
@@ -56,14 +56,14 @@ window.onload = function() {
   }
 
   function question4() {
-    CoolParkour = prompt('Do you think parkour is cool?');
-    console.log('My answer to "Do you think parkour is cool?" is', CoolParkour)
+    coolParkour = prompt('Do you think parkour is cool?');
+    console.log('My answer to "Do you think parkour is cool?" is', coolParkour)
 
-    if (CoolParkour.trim().toLowerCase() == 'yes' || CoolParkour.trim().toLowerCase() == 'y'){
+    if (coolParkour.trim().toLowerCase() == 'yes' || coolParkour.trim().toLowerCase() == 'y'){
       alert('Of course it is! I want to have to parkour to get to my bathroom.');
       numberRight++;
       console.log('Q4: ' + numberRight);
-    } else if (CoolParkour.trim().toLowerCase() == 'no' || CoolParkour.trim().toLowerCase() == 'n'){
+    } else if (coolParkour.trim().toLowerCase() == 'no' || coolParkour.trim().toLowerCase() == 'n'){
       alert('As Doctor Cox would say: Wrong wrong wrong wrong, wrong wrong wrong wrong. You\'re wrong. You\'re wrong. You\'re wrong.');
     } else {
       alert('You talkin\' that trash?');
@@ -71,14 +71,14 @@ window.onload = function() {
   }
 
   function question5() {
-    MyLastName = prompt('Is my last name similar to parkour?');
-    console.log('My answer to "Is my last name similar to parkour?" is', MyLastName)
+    myLastName = prompt('Is my last name similar to parkour?');
+    console.log('My answer to "Is my last name similar to parkour?" is', myLastName)
 
-    if (MyLastName.trim().toLowerCase() == 'yes' || MyLastName.trim().toLowerCase() == 'y'){
+    if (myLastName.trim().toLowerCase() == 'yes' || myLastName.trim().toLowerCase() == 'y'){
       alert('A-ha! It is! It\'s Parker, so obviously I should be good at it, like lions. But I\'m not.');
       numberRight++;
       console.log('Q5: ' + numberRight);
-    } else if (MyLastName.trim().toLowerCase() == 'no' || MyLastName.trim().toLowerCase() == 'n'){
+    } else if (myLastName.trim().toLowerCase() == 'no' || myLastName.trim().toLowerCase() == 'n'){
       alert('Le wrong-o. It\'s Parker. Are you sure you know me?');
     } else {
       alert('You talkin\' that trash?');
@@ -154,12 +154,9 @@ window.onload = function() {
     question6(attempts);
   }
 
-
   for(var userAttempts = 0; userAttempts < 6 && userCorrect === false ; userAttempts++) {
     question7(userAttempts);
   }
-
-
 
    if(userCorrect === false) {
      alert('Well, at least you tried');
